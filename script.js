@@ -1,47 +1,46 @@
-// =========================
-// LIKE
-// =========================
+// ================================
+// BOTÃO LIKE
+// ================================
 
 function curtir(botao) {
 
     const numero = botao.querySelector("span");
 
-    let valor = Number(numero.textContent);
+    let quantidade = Number(numero.textContent);
 
-    valor++;
+    quantidade++;
 
-    numero.textContent = valor;
+    numero.textContent = quantidade;
 }
 
 
-// =========================
-// DISLIKE
-// =========================
+// ================================
+// BOTÃO DISLIKE
+// ================================
 
 function descurtir(botao) {
 
     const numero = botao.querySelector("span");
 
-    let valor = Number(numero.textContent);
+    let quantidade = Number(numero.textContent);
 
-    valor++;
+    quantidade++;
 
-    numero.textContent = valor;
+    numero.textContent = quantidade;
 }
 
 
-// =========================
+// ================================
 // MODO ESCURO / CLARO
-// =========================
+// ================================
 
 function alternarTema() {
 
-    const body = document.body;
+    document.body.classList.toggle("dark");
+
     const botao = document.getElementById("themeButton");
 
-    body.classList.toggle("dark");
-
-    if (body.classList.contains("dark")) {
+    if (document.body.classList.contains("dark")) {
 
         botao.textContent = "☀️ Modo claro";
 

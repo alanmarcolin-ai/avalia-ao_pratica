@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Minha Página</title>
+    <title>Futebol News ⚽</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,67 +12,143 @@
 <body>
 
     <header>
-        <h1>Minha Galeria</h1>
+        <div>
+            <h1>⚽ Futebol News</h1>
+            <p>As principais notícias e curiosidades do futebol</p>
+        </div>
 
         <button id="themeButton" onclick="alternarTema()">
             🌙 Modo escuro
         </button>
     </header>
 
+
     <main>
+
+        <section class="destaque">
+
+            <img
+                src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=1200&q=80"
+                alt="Jogador de futebol">
+
+            <div class="texto-destaque">
+                <span>⚡ DESTAQUE</span>
+
+                <h2>O mundo do futebol está em campo!</h2>
+
+                <p>
+                    Acompanhe notícias, curiosidades, grandes jogadores,
+                    clubes e tudo que acontece no universo do futebol.
+                </p>
+
+                <button class="botao-noticia">
+                    Ler notícia
+                </button>
+            </div>
+
+        </section>
+
+
+        <h2 class="titulo">📰 Últimas notícias</h2>
+
 
         <section class="galeria">
 
             <article class="card">
-                <img src="imagens/imagem1.jpg" alt="Imagem 1">
 
-                <h2>Imagem 1</h2>
-                <p>Essa é a primeira imagem da nossa galeria.</p>
+                <img
+                    src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=800&q=80"
+                    alt="Partida de futebol">
 
-                <div class="botoes">
-                    <button class="like" onclick="curtir(this)">
-                        👍 <span>0</span>
-                    </button>
+                <div class="card-conteudo">
 
-                    <button class="dislike" onclick="descurtir(this)">
-                        👎 <span>0</span>
-                    </button>
+                    <span class="categoria">FUTEBOL</span>
+
+                    <h2>Grandes jogos movimentam o futebol</h2>
+
+                    <p>
+                        Os torcedores estão preparados para acompanhar
+                        grandes partidas e momentos emocionantes.
+                    </p>
+
+                    <div class="botoes">
+
+                        <button class="like" onclick="curtir(this)">
+                            👍 <span>0</span>
+                        </button>
+
+                        <button class="dislike" onclick="descurtir(this)">
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
                 </div>
             </article>
 
 
             <article class="card">
-                <img src="imagens/imagem2.jpg" alt="Imagem 2">
 
-                <h2>Imagem 2</h2>
-                <p>Essa é a segunda imagem da nossa galeria.</p>
+                <img
+                    src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=800&q=80"
+                    alt="Jogador com bola de futebol">
 
-                <div class="botoes">
-                    <button class="like" onclick="curtir(this)">
-                        👍 <span>0</span>
-                    </button>
+                <div class="card-conteudo">
 
-                    <button class="dislike" onclick="descurtir(this)">
-                        👎 <span>0</span>
-                    </button>
+                    <span class="categoria">JOGADORES</span>
+
+                    <h2>Craques fazem história dentro de campo</h2>
+
+                    <p>
+                        Habilidade, velocidade e gols fazem dos grandes
+                        jogadores verdadeiros ídolos do esporte.
+                    </p>
+
+                    <div class="botoes">
+
+                        <button class="like" onclick="curtir(this)">
+                            👍 <span>0</span>
+                        </button>
+
+                        <button class="dislike" onclick="descurtir(this)">
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
                 </div>
             </article>
 
 
             <article class="card">
-                <img src="imagens/imagem3.jpg" alt="Imagem 3">
 
-                <h2>Imagem 3</h2>
-                <p>Essa é a terceira imagem da nossa galeria.</p>
+                <img
+                    src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?auto=format&fit=crop&w=800&q=80"
+                    alt="Estádio de futebol">
 
-                <div class="botoes">
-                    <button class="like" onclick="curtir(this)">
-                        👍 <span>0</span>
-                    </button>
+                <div class="card-conteudo">
 
-                    <button class="dislike" onclick="descurtir(this)">
-                        👎 <span>0</span>
-                    </button>
+                    <span class="categoria">ESTÁDIOS</span>
+
+                    <h2>A paixão dos torcedores</h2>
+
+                    <p>
+                        Os estádios ficam lotados e a torcida transforma
+                        cada partida em um espetáculo.
+                    </p>
+
+                    <div class="botoes">
+
+                        <button class="like" onclick="curtir(this)">
+                            👍 <span>0</span>
+                        </button>
+
+                        <button class="dislike" onclick="descurtir(this)">
+                            👎 <span>0</span>
+                        </button>
+
+                    </div>
+
                 </div>
             </article>
 
@@ -80,9 +156,12 @@
 
     </main>
 
+
     <footer>
-        <p>© 2026 - Minha Galeria</p>
+        <p>⚽ Futebol News © 2026</p>
+        <p>Feito para os apaixonados por futebol!</p>
     </footer>
+
 
     <script src="script.js"></script>
 
